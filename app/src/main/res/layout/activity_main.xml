@@ -5,26 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
 
 
     <Button
         android:id="@+id/button_toast"
-        android:layout_marginTop="100px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="click button"
+        android:onClick="toastButtonClicked"/>
 
     <TextView
         android:id="@+id/show_count"
         android:layout_width="match_parent"
-        android:layout_height="1000px"
-        android:text="TextView" />
+        android:layout_height="650dp"
+        android:textSize="80sp"
+        android:gravity="center"
+        android:text="0" />
 
     <Button
         android:id="@+id/button_count"
-        android:layout_marginBottom="100px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="then the number will increase"
+        android:onClick="toastButtonClicked"/>
 </LinearLayout>
